@@ -1,0 +1,21 @@
+import { styled } from 'tamagui';
+import React from 'react';
+import { View } from 'react-native';
+import { PropsWithChildren } from 'react';
+
+import { Container } from './style.ts';
+
+interface {{pascalCase name}}PageProps {
+  title: string;
+}
+
+export const {{pascalCase name}}Page: React.FC<PropsWithChildren<{{pascalCase name}}PageProps>> = ({ title, children }) => {
+  return (
+    <Container>
+      <View>
+        <h1>{title}</h1>
+        {children}
+      </View>
+    </Container>
+  );
+};
